@@ -1,0 +1,16 @@
+using System;
+
+namespace SomeCode
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x = 3.1415926535d;
+            // we pass the variable and the number of decimal places
+            // then convert double to string
+            string roundedXString = Convert.ToString(Math.Round(x, 2));
+
+        }
+    }
+}
