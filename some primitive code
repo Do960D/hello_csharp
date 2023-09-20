@@ -1,0 +1,29 @@
+using System;
+
+namespace SomeCode
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // we pass the variable and the number of decimal places
+            // then convert double to string
+            double x = 3.1415926535d;
+            string roundedXString = Convert.ToString(Math.Round(x, 2));
+
+
+            //output to console entered number and convert string in integer 
+            int key1 = Convert.ToInt32(Console.Read());
+            Console.WriteLine($"Your enter is: {key1}");
+
+
+            //outputs three random numbers in the specified interval and splits with 2 spaces            
+            Random rnd = new Random();
+            int x = rnd.Next(0,10); 
+            int y = rnd.Next(10,100); 
+            int z = rnd.Next(100,1000);
+            Console.WriteLine($"{x}  {y}  {z}");
+
+        }
+    }
+}
